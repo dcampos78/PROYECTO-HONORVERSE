@@ -33,6 +33,7 @@ body {
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+  text-align: center;
 }
 
 button {
@@ -54,6 +55,23 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+header {
+  width: 100vw;
+}
+nav {
+  width: 100vw;
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+}
+
+.app-container {
+  height: 100vh;
+  width: 100vw;
+  background-image: url(https://res.cloudinary.com/dmbeu9ipe/image/upload/v1705493471/honor_harrington_at_all_costs2_by_genkkis_d2mtzpy-fullview_vftfoh.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;

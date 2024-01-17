@@ -1,13 +1,16 @@
 {
-  "name": "REACT-BACK-NEW",
+  "name": "back-react-main",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
     "dev": "nodemon index.js",
-    "simpsonSeed": "node ./src/seeds.js"
+    "booksSeed": "node ./src/books.seeds.js",
+    "charactersSeed": "node ./src/characters.seeds.js",
+    "countriesSeed": "node ./src/countries.seeds.js",
+    "planetsSeed": "node ./src/planets.seeds.js",
+    "images": "node ./src/api/images/upload.js"
   },
   "keywords": [],
   "author": "",
@@ -17,6 +20,7 @@
   },
   "dependencies": {
     "bcrypt": "^5.1.0",
+    "cloudinary": "^1.41.2",
     "cors": "^2.8.5",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",

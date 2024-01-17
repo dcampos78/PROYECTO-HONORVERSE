@@ -55,11 +55,31 @@ const images =[
     './src/api/images/planets/San Martin.webp',
     './src/api/images/planets/Sphinx.webp',
     './src/api/images/planets/The_Earth.webp',
+    './src/api/images/books/Cauldron_of_Ghosts.webp',
+    './src/api/images/countries/Erewhon.png',
+    './src/api/images/planets/beowulf2.webp',
+    './src/api/images/planets/haven.webp',
+    './src/api/images/planets/mesa2.png',
+    './src/api/images/planets/MAP HONORVERSE.png',
+    './src/api/images/planetshonor_among_enemies_2_by_genkkis_d5c6lhm-fullview.jpg',
+    './src/api/images/planets\honor_among_enemies_by_genkkis_d4oukwq-fullview.jpg',
+    './src/api/images/planetshonor_harrington___a_rising_thunder_1_by_genkkis_d5mq2mm-fullview.jpg',
+    './src/api/images/planetshonor_harrington_at_all_costs1_by_genkkis_d2mtzi5-fullview.jpg',
+    './src/api/images/planetshonor_harrington_at_all_costs2_by_genkkis_d2mtzpy-fullview.jpg',
+    './src/api/images/planetshonor_harrington_flag_in_exile_by_genkkis-d2mty9d.jpg',
+    './src/api/images/planetshonor_harrington_the_honor_of_the_queen_by_genkkis_d87jeme-fullview.jpg',
+    './src/api/images/planetshonor_harrington_war_of_honor1_by_genkkis_d2mtysi-fullview.jpg'
 ];
 
-(async function run () {
-    for (image of images){
-    const result  =await cloudinary.uploader.upload(image);
-    console.log(result.secure.url);
-}
-})();
+// (async function run () {
+//     for (image of images){
+//     const result  =await cloudinary.uploader.upload(image);
+//     console.log(result.secure.url);
+// }
+// })();
+
+const image =  './src/api/images/planetshonor_harrington_war_of_honor1_by_genkkis_d2mtysi-fullview.jpg'
+cloudinary.uploader.upload(image).then(result => {
+    console.log(result);
+})
+
