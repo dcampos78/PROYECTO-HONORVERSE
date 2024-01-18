@@ -12,26 +12,32 @@ const Login = () => {
   };
 
   return (
-    <div>
-      <p>Acceso a la Web (Login)</p>
+    <div className="login-box">
+      <h2 className="login-title">Acceso a la Web (Login)</h2>
       <form onSubmit={handleSubmit(logear)}>
-        <label>
-          Email
+        <div className="user-box">
           <input
             type="email"
             placeholder="Introduce tu email"
             {...register('email')}
           />
-        </label>
-        <label>
-          Password
+          <label>Email</label>
+        </div>
+        <div className="user-box">
           <input
             type="password"
             placeholder="Introduce tu password"
             {...register('password')}
           />
-        </label>
-        <input type="submit" value="Login" />
+          <label>Password</label>
+        </div>
+        <input type="submit" value="Login"/><a href="#">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Submit
+        </a>
       </form>
     </div>
   );

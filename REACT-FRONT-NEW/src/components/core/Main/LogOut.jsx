@@ -15,7 +15,7 @@ const LogOut = () => {
 
   return (
     <div>
-      <button onClick={handleSubmit(logOutAction)}>Cerrar Sesion</button>
+      <button className="logOut-button" onClick={handleSubmit(logOutAction)}>Cerrar Sesion</button>
     </div>
   );
 };
