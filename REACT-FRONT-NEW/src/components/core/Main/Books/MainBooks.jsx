@@ -2,19 +2,21 @@
 import { useEffect, useState } from "react";
 import { API } from "../../../axios/api";
 import SelectSerie from "./SelectSerie";
+import ListBooks from "./ListBooks";
+import SearchBook from "./SearchBook";
 
 function MainBooks() {
   const [serie, setSerie] = useState("Honorverse");
-  const [characters, setCharacters] = useState([]);
+  const [books, setBooks] = useState([]);
   const [search, setSearch] = useState("");
   const [filteredArray, setFilteredArray] = useState([]);
 
   useEffect(() => {
     try {
-      API.get(`http://localhost:5000/books/${serie}`)
+      API.get(`http://localhost:5000/books`)
         .then(
           (resp) => {
-            setCharacters(resp.data);
+            setBooks(resp.data);
             setFilteredArray(resp.data);
           },
           (error) => {
@@ -33,23 +35,23 @@ function MainBooks() {
   const changeSearch = (value) => {
     setSearch(value);
   };
-  const filterCharacter = () => {
-    const newArray = characters.filter((eachCharacter) =>
-      eachCharacter.name.toLowerCase().includes(search.toLowerCase())
+  const filterBooks = () => {
+    const newArray = books.filter((eachBook) =>
+      eachBook.title.toLowerCase().includes(search.toLowerCase())
     );
     setFilteredArray(newArray);
   };
 
   return (
     <>
-      <h2 className="container-list-characters">Books Honor Harrington</h2>
-      <SelectSerie changeSerie={changeSerie} serie={serie} />
-      {/* <SearchCharacter
+      <h2 className="container-list-Books">Books Honor Harrington</h2>
+      {/* <SelectSerie changeSerie={changeSerie} serie={serie} /> */}
+      <SearchBook
         changeSearch={changeSearch}
         search={search}
-        filterCharacter={filterCharacter}
+        filterBooks={filterBooks}
       />
-      <ListCharacters filteredArray={filteredArray} /> */}
+      <ListBooks filteredArray={filteredArray} />
     </>
   );
 }
