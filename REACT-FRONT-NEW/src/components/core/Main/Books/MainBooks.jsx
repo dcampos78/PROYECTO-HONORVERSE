@@ -1,12 +1,12 @@
 
 import { useEffect, useState } from "react";
 import { API } from "../../../axios/api";
-import SelectSerie from "./SelectSerie";
+// import SelectSerie from "./SelectSerie";
 import ListBooks from "./ListBooks";
 import SearchBook from "./SearchBook";
 
 function MainBooks() {
-  const [serie, setSerie] = useState("Honorverse");
+  // const [serie, setSerie] = useState("Honorverse");
   const [books, setBooks] = useState([]);
   const [search, setSearch] = useState("");
   const [filteredArray, setFilteredArray] = useState([]);
@@ -26,11 +26,11 @@ function MainBooks() {
     } catch (error) {
       console.log(error);
     }
-  }, [serie]);
+  });
 
-  const changeSerie = (value) => {
-    setSerie(value);
-  };
+  // const changeSerie = (value) => {
+  //   setSerie(value);
+  // };
 
   const changeSearch = (value) => {
     setSearch(value);
