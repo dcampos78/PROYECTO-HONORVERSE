@@ -1,7 +1,6 @@
 import LogOut from './LogOut';
 import ActualUser from './ActualUser';
-import Books from './Books';
-
+import MainBooks from './Books/MainBooks';
 
 const Main = () => {
   return (
@@ -10,7 +9,7 @@ const Main = () => {
         <ActualUser />
         <LogOut />
         <div className="container-list">
-          <Books/>
+          <MainBooks/>
           <h2 className="container-list-characters">Characters Honor Harrington</h2>
           <div id="charactersList">
             <button>Ver Characters</button>
