@@ -78,7 +78,7 @@ li::before {
 
 .home-container, .home-title, .home-parragraph{
   width: 80vw;
-  color: white;
+  color: orange;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -471,6 +471,17 @@ li::before {
   font-weight: bold;
   font-size: 20px;
 }
+
+.container-list-titlebooks, .container-list-characters, .container-list-planets, .container-list-countries{
+  color: blueviolet;
+}
+
+
+
+
+
+
+
 /*LOGOUT*/
 .logOut-button{
   align-items: center;
@@ -523,4 +534,5 @@ background-image: url(https://res.cloudinary.com/dmbeu9ipe/image/upload/v1701928
   align-items: center;
   flex-direction: column;
   bottom: 0px;
+  color: white;
 }

@@ -1,5 +1,7 @@
 import LogOut from './LogOut';
 import ActualUser from './ActualUser';
+import Books from './Books';
+
 
 const Main = () => {
   return (
@@ -8,10 +10,19 @@ const Main = () => {
         <ActualUser />
         <LogOut />
         <div className="container-list">
-          <h2 className="container-list-titlebooks">My SCI FI Collection</h2>
-          <div id="booksList"></div>
-          <h2 className="container-list-titleauthors">My inlove authors</h2>
-          <div id="authorsList"></div>
+          <Books/>
+          <h2 className="container-list-characters">Characters Honor Harrington</h2>
+          <div id="charactersList">
+            <button>Ver Characters</button>
+          </div>
+          <h2 className="container-list-planets">Planets Honor Harrington</h2>
+          <div id="planetsList">
+            <button>Ver Characters</button>
+          </div>
+          <h2 className="container-list-countries">Countries Honor Harrington</h2>
+          <div id="countriesList">
+            <button>Ver Countries</button>
+          </div>
         </div>
       </div>
     </>

@@ -24,7 +24,7 @@ export const API = axios.create({
     //tiempo que durara la peticion
     timeout: 10000,
     //defino la ruta de la peticion directamente o cun una variable de entorno
-    baseURL: "http://localhost:5001/",
+    baseURL: "http://localhost:5000/",
 
 
 });

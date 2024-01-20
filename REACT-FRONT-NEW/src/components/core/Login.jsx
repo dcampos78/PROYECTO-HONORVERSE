@@ -31,12 +31,13 @@ const Login = () => {
           />
           <label>Password</label>
         </div>
-        <input type="submit" value="Login"/><a href="#">
         <span></span>
         <span></span>
-        <span></span>
-        <span></span>
-        Submit
+        <input type="submit" value="submit" />
+        <a href="#">
+          <span></span>
+          <span></span>
+          Submit
         </a>
       </form>
     </div>

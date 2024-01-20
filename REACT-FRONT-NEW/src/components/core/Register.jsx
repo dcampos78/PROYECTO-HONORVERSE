@@ -16,7 +16,7 @@ const Register = () => {
 
   return (
     <div className="register-box">
-      <h2 className="register-title">Acceso a la Web (Login)</h2>
+      <h2 className="register-title">Acceso a la Web (Register)</h2>
       <form onSubmit={handleSubmit(registrar)}>
         <div className="user-box">
           <input
@@ -45,7 +45,7 @@ const Register = () => {
       <span></span>
         Registrate
       </a>
-      {/* <input type="submit" value="registrate" /> */}
+      <input type="submit" value="registrate" />
       </form>
     </div>
   );
