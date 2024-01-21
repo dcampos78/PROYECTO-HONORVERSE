@@ -2,17 +2,18 @@ const Planet = require('../models/planets.model');
 
 const getPlanets = async (req, res) => {
   try {
-    const allPlanets = await Country.find();
+    const allPlanets = await Planet.find();
     return res.status(200).json(allPlanets);
   } catch (error) {
     return res.status(500).json(error);
   }
+  console.log(res);
 };
 
 const getOnePlanet = async (req, res) => {
   try {
     const { id } = req.params;
-    const onePlanet = await Planet.findById(id).populate('country');
+    const onePlanet = await Planet.findById(id).populate('planet');
     return res.status(200).json(onePlanet);
   } catch (error) {
     return res.status(500).json(error);
