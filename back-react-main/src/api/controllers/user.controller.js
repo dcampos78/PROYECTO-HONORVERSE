@@ -27,7 +27,6 @@ const login = async (req, res) => {
 const register = async (req, res) => {
   try {
     const newUser = new User(req.body);
-    //comprobacion newuser o req.vody
     console.log(req.body);
     if (!validateEmail(newUser.email)) {
       return res.status(400).send({ message: 'Invalid email' });
@@ -40,7 +39,6 @@ const register = async (req, res) => {
     }
     newUser.password = bcrypt.hashSync(newUser.password, 10);
     const createdUser = await newUser.save();
-    //verificascion que devuelve
     console.log(createdUser);
     return res.status(201).json(createdUser);
   } catch (error) {

@@ -3,11 +3,12 @@ import Books from "./Books";
 
 function ListBooks({ filteredArray }) {
   return (
-    <>
-      <h2 className="container-books-listTitle">Listado de libros</h2>
+<>
+    <div className="container-books-list">
       {filteredArray.map((book) => (
         <Books book={book} key={book._id} />
       ))}
+    </div>
     </>
   );
 }

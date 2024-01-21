@@ -36,7 +36,7 @@ const Home = () => {
         la luz, transportando a sus colonos criogenizados durante siglos antes
         de llegar a su destino. Esto cambió con el invento de las velas
         Warshawski, un sistema de propulsión hiperespacial que mejoró las
-        velocidades y permitió el comercio entre las distintas colonias.{' '}
+        velocidades y permitió el comercio entre las distintas colonias.
       </p>
       <p className="home-parragraph">
         La reaparición del comercio llevó a un resurgimiento de la piratería, lo

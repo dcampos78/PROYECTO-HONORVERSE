@@ -11,7 +11,7 @@ const arrayPlanets = [
     capital: 'Aterrizaje',
     location: 'Sistema Manticore A',
     gravity: '1,01 G',
-    country: '65a823a371cb2d6063ee162e',
+    country: 'Manticore',
     moons: '1 (Thorson)',
     picture:
       'https://res.cloudinary.com/dmbeu9ipe/image/upload/v1705477357/s9yqqhjcxvhmrpxesncl.jpg',
@@ -23,7 +23,7 @@ const arrayPlanets = [
     capital: 'Yawata Crossing',
     location: 'Sistema Manticore A',
     gravity: '1,35 G',
-    country: '65a823a371cb2d6063ee162e',
+    country: 'Manticore',
     moons: '2 (Perseus, Bellerefonte)',
     picture:
       'https://res.cloudinary.com/dmbeu9ipe/image/upload/v1705477375/t7m2a2iy3xux4eydr4d0.webp',
@@ -35,7 +35,7 @@ const arrayPlanets = [
     capital: 'Yawata Crossing',
     location: 'Sistema Manticore A',
     gravity: '1,05 G',
-    country: '65a823a371cb2d6063ee162e',
+    country: 'Manticore',
     moons: '0',
     picture:
       'https://res.cloudinary.com/dmbeu9ipe/image/upload/v1705477387/gptihrj1reoq3dp46euo.jpg',
@@ -47,7 +47,7 @@ const arrayPlanets = [
     capital: 'Ciudad San Marcos',
     location: 'Sistema Trevor Star',
     gravity: '2,7 G',
-    country: '65a823a371cb2d6063ee162e',
+    country: 'Manticore',
     moons: '0',
     picture:
       'https://res.cloudinary.com/dmbeu9ipe/image/upload/v1705477421/hkpwq4cvowqsii7adqgm.webp',
@@ -59,7 +59,7 @@ const arrayPlanets = [
     capital: 'Austin City',
     location: 'Sistema Grayson',
     gravity: '1,17 G',
-    country: '65a823a371cb2d6063ee162f',
+    country: 'Grayson',
     moons: '0',
     picture:
       'https://res.cloudinary.com/dmbeu9ipe/image/upload/v1705477410/il1nnfmptaiwxovm9ab0.webp',
@@ -71,7 +71,7 @@ const arrayPlanets = [
     capital: 'Residencia del comisionado',
     location: 'Sistema Medusa',
     gravity: '0,85 G',
-    country: '65a823a371cb2d6063ee162e',
+    country: 'Manticore',
     moons: '0',
     picture:
       'https://res.cloudinary.com/dmbeu9ipe/image/upload/v1705477340/uyimfkiwbgm8ie5ihsae.webp',
@@ -83,7 +83,7 @@ const arrayPlanets = [
     capital: 'Mendel',
     location: 'Sistema Mesa',
     gravity: '1,02',
-    country: '65a823a371cb2d6063ee1631',
+    country: 'Liga Solariana',
     moons: '0',
     picture:
       'https://res.cloudinary.com/dmbeu9ipe/image/upload/v1705479725/fs4w5hz1ccr38mfzgpva.png',
@@ -95,7 +95,7 @@ const arrayPlanets = [
     capital: 'Chicago',
     location: 'Sistema Solar',
     gravity: '1',
-    country: '65a823a371cb2d6063ee1631',
+    country: 'Liga Solariana',
     moons: '1 (Luna)',
     picture:
       'https://res.cloudinary.com/dmbeu9ipe/image/upload/v1705477326/j6dzftqnfmtmpuduxia2.webp',
@@ -107,7 +107,7 @@ const arrayPlanets = [
     capital: 'Columbia',
     location: 'Sistema Sigma Draconis',
     gravity: '1',
-    country: '65a823a371cb2d6063ee1631',
+    country: 'Liga Solariana',
     moons: '0',
     picture:
       'https://res.cloudinary.com/dmbeu9ipe/image/upload/v1705479698/tvq5hmayj9k2m06xng31.webp',
@@ -119,7 +119,7 @@ const arrayPlanets = [
     capital: 'Nuevo Paris',
     location: 'Sistema Haven',
     gravity: '1',
-    country: '65a823a371cb2d6063ee1630',
+    country: 'Haven',
     moons: '0',
     picture:
       'https://res.cloudinary.com/dmbeu9ipe/image/upload/v1705479712/qekouhi6i5sigdhqjqsx.webp',

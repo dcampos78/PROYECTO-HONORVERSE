@@ -4,7 +4,7 @@ const Schema = mongoose.Schema;
 
 const planetsSchema = new Schema(
   {
-    name: { type: String, required: false },
+    name: { type: String, required: true },
     settled: { type: String, required: false },
     population: { type: String, required: false },
     capital: { type: String, required: false },

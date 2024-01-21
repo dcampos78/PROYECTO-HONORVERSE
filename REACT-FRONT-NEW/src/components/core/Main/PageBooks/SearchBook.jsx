@@ -11,12 +11,12 @@ function SearchBook({ changeSearch, search, filterBooks }) {
     filterBooks();
   };
   return (
-    <form>
-      <label htmlFor="">Indica el libro</label>
-      <input type="text" name="" id="" onChange={handleInput} value={search} />
+    <form className="container-books-search">
+      <label className="container-books-search-label" htmlFor="">Indica el libro</label>
+      <input className="container-books-search-search" type="text" name="" id="" onChange={handleInput} value={search} />
       {console.log(search)}
-      <input type="submit" value="Buscar" onClick={handleSearch} />
-      <input type="submit" value="Cancelar" onClick={handleCancel} />
+      <input className="container-books-search-input" type="submit" value="Buscar" onClick={handleSearch} />
+      <input className="container-books-search-input" type="submit" value="Cancelar" onClick={handleCancel} />
     </form>
   );
 }

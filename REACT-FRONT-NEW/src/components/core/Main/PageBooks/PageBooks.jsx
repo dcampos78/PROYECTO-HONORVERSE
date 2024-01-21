@@ -3,6 +3,7 @@ import { API } from "../../../axios/api";
 import SelectSerie from "./SelectSerie";
 import ListBooks from "./ListBooks";
 import SearchBook from "./SearchBook";
+import '../PageBooks/PageBooks.scss';
 
 function PageBooks() {
   const [serie, setSerie] = useState("Honorverse");
@@ -44,16 +45,19 @@ function PageBooks() {
 
   return (
     <>
-    <div className="container-Books">
-      <h2 className="container-Books-title">Books Honor Harrington</h2>
-      {/* <SelectSerie changeSerie={changeSerie} serie={serie} /> */}
+    <div className="container-books">
+      <h2 className="container-books-title">Books Honor Harrington</h2>
+      <SelectSerie changeSerie={changeSerie} serie={serie} />
       <SearchBook
         changeSearch={changeSearch}
         search={search}
         filterBooks={filterBooks}
       />
-      <ListBooks filteredArray={filteredArray} />
+      <h2 className="container-books-card-listTitle">Listado de paises</h2>
+      <div className="container-books-card">
+        <ListBooks filteredArray={filteredArray} />
       </div>
+    </div>
     </>
   );
 }

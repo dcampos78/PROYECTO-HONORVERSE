@@ -21,7 +21,6 @@ const getOneCountry = async (req, res) => {
 
 const postCountry = async (req, res) => {
   try {
-    // console.log(req.body);
     const newCountry = new Country(req.body);
     const createdCountry = await newCountry.save();
     return res.status(201).json(createdCountry);

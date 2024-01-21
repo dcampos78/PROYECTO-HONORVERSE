@@ -21,7 +21,6 @@ const getOneBook = async (req, res) => {
 
 const postBook = async (req, res) => {
   try {
-    // console.log(req.body);
     const newBook = new Book(req.body);
     const createdBook = await newBook.save();
     return res.status(201).json(createdBook);

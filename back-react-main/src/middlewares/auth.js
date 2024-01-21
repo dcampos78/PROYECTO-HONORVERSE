@@ -2,15 +2,12 @@ const User = require('../api/models/user.model');
 const { verifySign } = require('../utils/jwt');
 
 const isAuth = async (req, res, next) => {
-  //COMPRUEBO AUTH Y SI ES VALIDO LE DEJO PASAR A LO SIGUIENTE(next)
   try {
     const authorization = req.headers.authorization;
     console.log(authorization);
     if (!authorization) {
       return res.status(401).json({ message: 'Unauthorized' });
     }
-
-    //Bearer ASdassa dsads asdsad --> split(' ') --> [Bearer,ASdassa,dsads,asdsad]
     const token = authorization.split(' ')[1];
     if (!token) {
       return res.status(401).json({ message: 'no token provided' });
@@ -23,7 +20,6 @@ const isAuth = async (req, res, next) => {
 
     const userLogged = await User.findById(tokenVerified.id);
     req.user = userLogged;
-    //obj = {name: "pepe", apellido: "perez"}; obj.edad = 20; --> {name: "pepe", apellido: "perez", edad: 20};
 
     next();
   } catch (error) {
@@ -32,7 +28,7 @@ const isAuth = async (req, res, next) => {
 };
 
 const isAdmin = async (req, res, next) => {
-  //COMPRUEBO AUTH Y SI ES VALIDO LE DEJO PASAR A LO SIGUIENTE(next)
+
   try {
     const authorization = req.headers.authorization;
     if (!authorization) {

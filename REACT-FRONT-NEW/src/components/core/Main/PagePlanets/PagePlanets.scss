@@ -1,9 +1,9 @@
-.container-countries{
+.container-planets{
     width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url(https://res.cloudinary.com/dmbeu9ipe/image/upload/v1705493468/honor_harrington_war_of_honor1_by_genkkis_d2mtysi-fullview_b34fge.jpg);
+    background-image: url(https://res.cloudinary.com/dmbeu9ipe/image/upload/v1705493468/honor_among_enemies_2_by_genkkis_d5c6lhm-fullview_mkzwqx.jpg);
     background-size: contain;
         &-title{
             background: linear-gradient(yellow, orange);
@@ -69,21 +69,21 @@
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                background-image: url(https://res.cloudinary.com/dmbeu9ipe/image/upload/v1701925611/vdnkk3a74brvlrdkjbjw.jpg);
+                background-image: url(https://res.cloudinary.com/dmbeu9ipe/image/upload/v1705482664/trqbjawx6qrh1qpbmvs5.png);
                 background-size: cover;
                 border-radius: 15%;
                 width: 350px;
-                height: 350px;
+                height: 760px;
                 margin: 30px 10px 0 10px;
                 &-image{
                     position: relative;
                     left: 0px;
-                    width:215px;
-                    height:130px;
+                    width:325px;
+                    height:350px;
                     transition: width 0.2s, height 0.2s;
                     &:hover{
-                        width:456px;
-                        height:260px;
+                        width:556px;
+                        height:575px;
                         display:block;
                         z-index:999;
                 }
@@ -91,19 +91,19 @@
         }
     }
 }
-.container-countries-card-container-title{
+.container-planets-card-container-title{
     color: blueviolet;
     text-decoration: underline;
     text-align: center
 }
-.container-countries-card-container-p{
+.container-planets-card-container-p{
     color: blueviolet;
     text-align: center
 }
 
 /*MEDIA QUERY*/
 @media (min-width: 600px)  {
-    .container-countries-title {
+    .container-planets-title {
         font-size: 250%;
     }
 }
