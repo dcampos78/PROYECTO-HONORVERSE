@@ -15,7 +15,7 @@ const ActualUser = () => {
 
   return (
     <div className="actualUser-container">
-      <button onClick={handleSubmit(lookUser)}>Ver Usuario Logado</button>
+      <button className="actualUser-button" onClick={handleSubmit(lookUser)}>Ver Usuario Logado</button>
       <p>{localStorage.getItem('email')}</p>
     </div>
   );

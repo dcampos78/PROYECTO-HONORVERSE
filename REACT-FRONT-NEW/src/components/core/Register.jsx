@@ -2,6 +2,7 @@ import { registerUser } from '../redux/actions/auth.actions';
 import { useForm } from 'react-hook-form';
 import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
+import '../core/Register.scss';
 
 const Register = () => {
   //register va a guardar las proiedades en un objeto, la vamos ejecutando en cada imput, y usamos spread por el tema del objeto, e indicamos el nombre de la propiedad donde quiero guardarlo
@@ -15,37 +16,30 @@ const Register = () => {
   };
 
   return (
-    <div className="register-box">
-      <h2 className="register-title">Acceso a la Web (Register)</h2>
+    <div className="register-container-box">
+      <h2 className="register-container-box-title">Acceso a la Web (Register)</h2>
       <form onSubmit={handleSubmit(registrar)}>
-        <div className="user-box">
-          <input
+        <div className="register-container-box-userBox">
+          <input className="register-container-box-userBox-input"
             type="email"
             placeholder="Introduce tu email"
             {...register('email')}
           />
-          <label>Email</label>
+          <label className="register-container-box-userBox-label">Email</label>
         </div>
-        <div className="user-box">
-          <input
+        <div className="register-container-box-userBox">
+          <input className="register-container-box-userBox-input"
             type="password"
             placeholder="Introduce tu password"
             {...register('password')}
           />
-          <label>Password</label>
+          <label className="register-container-box-userBox-label">Password</label>
         </div>
-        <div className="user-box">
-          <input type="text" {...register('name')} />
-          <label>Nombre</label>
+        <div className="register-container-box-userBox">
+          <input className="register-container-box-userBox-input" type="text" {...register('name')} />
+          <label className="register-container-box-userBox-label">Nombre</label>
         </div>
-      <a href="#">
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-        Registrate
-      </a>
-      <input type="submit" value="registrate" />
+      <input className="register-container-box-button" type="submit" value="registrate" />
       </form>
     </div>
   );

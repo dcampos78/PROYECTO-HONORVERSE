@@ -1,12 +1,12 @@
-
 import { useEffect, useState } from "react";
 import { API } from "../../../axios/api";
 // import SelectSerie from "./SelectSerie";
 import ListBooks from "./ListBooks";
 import SearchBook from "./SearchBook";
+import '../PageBooks/Pagebooks.scss';
 
-function MainBooks() {
-  // const [serie, setSerie] = useState("Honorverse");
+function PageBooks() {
+  const [serie, setSerie] = useState("Honorverse");
   const [books, setBooks] = useState([]);
   const [search, setSearch] = useState("");
   const [filteredArray, setFilteredArray] = useState([]);
@@ -26,7 +26,8 @@ function MainBooks() {
     } catch (error) {
       console.log(error);
     }
-  });
+  }, [serie]);
+
 
   // const changeSerie = (value) => {
   //   setSerie(value);
@@ -44,7 +45,7 @@ function MainBooks() {
 
   return (
     <>
-      <h2 className="container-list-Books">Books Honor Harrington</h2>
+      <h2 className="container-Books">Books Honor Harrington</h2>
       {/* <SelectSerie changeSerie={changeSerie} serie={serie} /> */}
       <SearchBook
         changeSearch={changeSearch}
@@ -55,4 +56,4 @@ function MainBooks() {
     </>
   );
 }
-export default MainBooks;
+export default PageBooks;
